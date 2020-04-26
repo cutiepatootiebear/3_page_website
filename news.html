@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>VIT HTML CSS</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a class="active" href="news.html">News</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a class="active" href="about.html">About</a>
+      <!-- input field -->
+      <div class="search-container">
+        <!-- form  -->
+        <form onsubmit="confirm()" action="https://vetsintech.co/">
+          <input
+            id="fname"
+            type="text"
+            placeholder="Enter your name: "
+            size="20"
+          />
+          <button type="submit" value="Submit">Enter</button>
+        </form>
+      </div>
+      <!-- end of input field -->
+    </div>
+
+    <div style="padding-left: 16px;">
+      <h2>News</h2>
+      <img src="assets/images/mattis2.jpg" width="250px" />
+    </div>
+
+    <!-- prompt  -->
+<!-- prompt  -->
+<script>
+  function confirm() {
+    fname = document.forms[0].fname.value;
+    alert(
+      "Hey there " + fname + "! You will now be redirected to Vets In Tech"
+    );
+  }
+</script>
+  </body>
+</html>
